@@ -8,10 +8,8 @@ const startTimer = (min) => {
     let seconds = time % 60;
     const minutes = Math.floor(time / 60);
     time--;
-    
-    
 
-    // if (seconds < 10) { 
+    // if (seconds < 10) {
     //  console.log(`${minutes}:0${seconds}`);
     // } else if (minutes < 10) {
     //   console.log(`0${minutes}:${seconds}`); WORKS ON CONSOLE
@@ -22,9 +20,9 @@ const startTimer = (min) => {
     // console.log(countdown);
 
     if (seconds < 10) {
-        seconds = '0' + seconds
+      seconds = "0" + seconds;
     } else {
-        seconds = seconds;
+      seconds = seconds;
     }
 
     countdownEl.innerHTML = `${minutes}:${seconds}`;
